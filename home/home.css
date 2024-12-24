@@ -1,0 +1,645 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-on-scroll {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.animate-on-scroll-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+#cabecalho {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    left: 0;
+    padding-bottom: 4.5px;
+    padding-top: 4.5px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header#cabecalho {
+    background-color: #931EBC;
+    width: 100%;
+}
+
+#cabecalho .container {
+    align-items: center;
+    color: #0b373a;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+#cabecalho h1 {
+    margin: 0;
+}
+
+#cabecalho nav ul {
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#cabecalho nav ul li {
+    display: inline;
+}
+
+#cabecalho nav ul li a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: font-size 0.3s ease;
+}
+
+#cabecalho nav ul li a:hover {
+    background-color: #c227fa;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 8px 12px;
+    text-decoration: underline;
+}
+
+#banner-text {
+    background-color: #EBEBEB;
+    display: flex;
+    height: 439px;
+    flex-direction: row;
+    align-items: center;
+}
+
+#banner-text header {
+    margin-top: 59px;
+    margin-left: 27px;
+    width: 100%;
+}
+
+#banner-text h1 {
+    font-family: "Inria Serif", sans-serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    width: 466px;
+}
+
+#banner-text hr {
+    background: black;
+    border: none;
+    border-radius: 2rem;
+    height: 1px;
+    margin-top: 2rem;
+    width: 466px;
+}
+
+#banner-text p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    /* text-align: center; */
+    width: 466px;
+}
+
+#banner-text button {
+    margin-top: 2rem;
+    width: 148px;
+    height: 35px;
+    border-radius: 22px;
+    border: none;
+    background-color: #931EBC;
+}
+
+#banner-text button a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+#banner-text .banner-img {
+    position: relative;
+    width: auto;
+}
+
+/* segunda section */
+/* segunda section */
+/* segunda section */
+#second {
+    animation: slideInFromLeft 1s ease-out;
+    margin: 58px 119px;
+}
+
+#second .container h1 {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#second .container_flex_diff {
+    display: flex;
+    gap: 77px;
+    margin-bottom: 58px;
+}
+
+#second .image-div-diff img {
+    border-radius: 9px;
+    height: 351px;
+    width: 509px;
+}
+
+#second .text-div-diff p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* segunda section */
+/* segunda section */
+/* segunda section */
+
+/* terceira section */
+/* terceira section */
+/* terceira section */
+#third {
+    animation: slideInFromRight 1s ease-out;
+    width: 100%;
+    height: 825px;
+    background-color: #EBEBEB;
+}
+
+#third .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#third .container h1 {
+    padding-top: 58px;
+    padding-bottom: 50px;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+}
+
+#third .container_flex_card {
+    display: flex;
+    gap: 110px;
+    justify-content: center;
+}
+
+#third .image-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    height: 226px;
+    margin-bottom: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 251px;
+}
+
+#third .image-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+#third .image-card-2 {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    height: 226px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 251px;
+}
+
+#third .image-card-2:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transform: scale(1.2);
+}
+
+#third .image-card p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+#third .image-card-2 p {
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    display: flex;
+    font-size: 16px;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+#third .image-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 140px;
+    width: 100%;
+}
+
+#third .container button {
+    width: 98px;
+    height: 35px;
+    margin-top: 38px;
+    border-radius: 22px;
+    border: none;
+    background-color: #931EBC;
+}
+
+#third .container button a {
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+/* terceira section */
+/* terceira section */
+/* terceira section */
+
+/* quarta section */
+/* quarta section */
+/* quarta section */
+
+#fourth {
+    margin: 58px 119px;
+}
+
+#fourth .container h1 {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-size: 37px;
+    font-weight: 600;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#fourth .container_flex_diff {
+    display: flex;
+    gap: 77px;
+    margin-bottom: 58px;
+}
+
+#fourth .text-div-diff p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+#fourth .text-div-diff h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#fourth .text-div-diff ul li {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+#fourth .image-div-diff img {
+    border-radius: 9px;
+    height: 351px;
+    width: 509px;
+}
+
+#fourth .form h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+#fourth .form form {
+    box-shadow: 0 2px 5px #000000a8;
+    height: auto;
+    background-color: #EBEBEB;
+    border: #787878;
+    border-radius: 16px;
+}
+
+
+#fourth .form form .formulario {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    padding-top: 27px;
+    margin: 0 69px;
+
+}
+
+#fourth .form form .formulario .info {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 950px;
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth .form form .formulario .info input {
+    margin-top: 5px;
+    height: 30px;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px #000000a8;
+}
+
+#fourth .form form .formulario_donate {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 27px;
+    margin: 0 69px;
+}
+
+#fourth .form form .formulario_donate .valor {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth .form form .formulario_donate .valor input {
+    margin-top: 5px;
+    height: 30px;
+    border: none;
+    width: 150px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px #000000a8;
+}
+
+#fourth .form form .formulario_donate .valor-fixo p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth .form form .formulario_donate .valor-fixo button {
+    background-color: #fff;
+    border-radius: 12px;
+    height: 30px;
+    width: 70px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: 0 2px 5px #000000a8;
+    margin-top: 5px;
+}
+
+#fourth .form form .formulario_donate .valor-fixo button:hover {
+    cursor: pointer;
+}
+
+#fourth .form form .formulario_donate .pagamento p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+}
+
+#fourth .form form .formulario_donate .pagamento .box {
+    display: flex;
+    justify-content: space-between;
+}
+
+#fourth .form form .formulario_donate .pagamento .box button {
+    background-color: #fff;
+    border-radius: 12px;
+    height: 90px;
+    width: 80px;
+    margin-top: 5px;
+    border: none;
+    box-shadow: 0 2px 5px #000000a8;
+}
+
+#fourth .form form .formulario_donate .pagamento .box button p {
+    margin-bottom: 10px;
+}
+
+#fourth .form form .formulario_donate .pagamento .box button:hover {
+    cursor: pointer;
+}
+
+#fourth .form form .text-form-footer {
+    padding: 27px 0;
+    margin: 0 69px;
+}
+
+#fourth .form form .text-form-footer p {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+#fourth .form form .text-form-footer p span {
+    color: #931EBC;
+}
+
+#fourth .form form .line {
+    margin: 0 69px;
+}
+
+#fourth .form form hr {
+    width: auto;
+    margin-top: 27px;
+    background: black;
+    border: none;
+    border-radius: 2rem;
+    height: 1px;
+}
+
+#fourth .form form .form-buttons {
+    margin-top: 27px;
+    padding-bottom: 27px;
+    width: 1030px;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+}
+
+#fourth .form form .form-buttons .btn {
+    padding: 15px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 47px;
+    cursor: pointer;
+    height: 35px;
+    width: 100px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fourth .form form .form-buttons .btn-cancel {
+    background-color: #D60000;
+    text-decoration: none;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+#fourth .form form .form-buttons a {
+    text-decoration: none;
+    color: white;
+}
+
+#fourth .form form .form-buttons .btn-submit {
+    color: white;
+    background-color: #7312BE;
+}
+
+.footer {
+    background-color: #931EBC;
+    padding: 40px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer .container-footer {
+    gap: 300px;
+    display: flex;
+
+}
+
+.footer .container-footer .footer-column {
+    width: 50%;
+}
+
+.footer .footer-column .footer-logo {
+    width: 204px;
+    height: 106px;
+}
+
+.footer .footer-column p {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .container-footer .footer-column h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer .container-footer .footer-column a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-socials {
+    margin-top: 10px;
+}
+
+.footer-socials a {
+    margin-right: 15px;
+}
+
+.footer-socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer .container-footer h1 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footer .container-footer ul li {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.footer .container-footer ul li a {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+}
+
+.footer .container-footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.sub-footer {
+    background-color: #4d0066;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+}
+
+.sub-footer p {
+    color: #fff;
+    font-family: "Inter", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+}

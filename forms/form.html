@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCEG</title>
+    <link rel="shortcut icon" href="../assets/uceg.png" type="image/x-icon">
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header id="cabecalho">
+        <div class="container">
+            <a href="../home/home.html"><img src="../assets/uceg.png" alt=""></a>
+            <nav>
+                <ul type="none">
+                    <ul type="none">
+                        <li id="item"><a href="../home/home.html">INÍCIO</a></li>
+                        <li id="item"><a href="../aboutUs/aboutus.html">QUEM SOMOS</a></li>
+                        <li id="item"><a href="../sport/sports.html">ESPORTES</a></li>
+                        <li id="item"><a href="../activities/activity.html">ATIVIDADES</a></li>
+                        <li id="item"><a href="../events/event.html">EVENTOS</a></li>
+                        <li id="item"><a href="../forms/form.html">INSCRIÇÃO</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER -->
+
+    <section class="hero-section">
+
+        <img src="assets/hero.png" alt="Imagem Comunidade Esportiva" class="hero-image">
+        <div class="hero-content">
+            <h1>Junte-se à Nossa Comunidade Esportiva</h1>
+
+            <hr>
+
+            <p>Complete o Formulário Abaixo para Iniciar sua Jornada Conosco e Aproveitar Todas as Oportunidades de
+                Participação em Nossos Programas Esportivos e Eventos Especiais.</p>
+        </div>
+
+    </section>
+
+
+    <!-- <div class="overlay" id="overlaySucesso" style="display: none;">
+        <div class="alert" id="alertSucesso">
+            <div class="content">
+                <div class="sucesso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#7312BE"
+                        class="bi bi-check-all" viewBox="0 0 16 16">
+                        <path
+                            d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486z" />
+                    </svg>
+                    <span>Sucesso</span>
+                </div>
+                <hr id="hr_test">
+                <p>Parabéns! Você deu o primeiro passo para se juntar à nossa comunidade esportiva!</p>
+            </div>
+        </div>
+    </div> -->
+
+    <div class="overlay" id="overlayErro" style="display: none;">
+        <div class="alert" id="alertSucesso">
+            <div class="content">
+                <div class="sucesso">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="#7312BE" fill="currentColor"
+                        class="bi bi-exclamation-triangle" viewBox="0 0 16 16">
+                        <path
+                            d="M7.938 2.016A.13.13 0 0 1 8.002 2a.13.13 0 0 1 .063.016.15.15 0 0 1 .054.057l6.857 11.667c.036.06.035.124.002.183a.2.2 0 0 1-.054.06.1.1 0 0 1-.066.017H1.146a.1.1 0 0 1-.066-.017.2.2 0 0 1-.054-.06.18.18 0 0 1 .002-.183L7.884 2.073a.15.15 0 0 1 .054-.057m1.044-.45a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767z" />
+                        <path
+                            d="M7.002 12a1 1 0 1 1 2 0 1 1 0 0 1-2 0M7.1 5.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0z" />
+                    </svg>
+                    <span>Ops..</span>
+                </div>
+                <hr id="hr_test">
+                <p>Por favor, preencha todos os campos obrigatórios antes de enviar o formulário.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="body" style="display: none;">
+        <div class="container-load">
+            <div class="loading"></div>
+            <span>Carregando...</span>
+        </div>
+    </div>
+
+
+    <section class="form-section">
+        <div class="container">
+            <h1>Inscreva-se para Atividades e Esportes</h1>
+
+            <form action="grava.jsp" method="post" name="form1" id="form1">
+                <div class="form-first">
+                    <input type="text" name="nome_completo" placeholder="Nome Completo" class="form-field form-nome">
+                    <input type="email" name="email" placeholder="E-mail" class="form-field form-email">
+                </div>
+
+                <div class="form-second">
+                    <input type="text" name="celular" placeholder="Celular" class="form-field form-celular">
+                    <input type="text" name="endereco" placeholder="Endereço Completo" class="form-field form-endereco">
+                    <input type="date" name="data_nascimento" placeholder="Data de Nascimento"
+                        class="form-field form-data-nascimento">
+                </div>
+
+                <div class="form-third">
+                    <select name="genero" class="form-field form-genero">
+                        <option value="" disabled selected>Gênero</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="prefiro_nao_informar">Prefiro não informar</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <select name="participacao" class="form-field form-participacao">
+                        <option value="" disabled selected>Qual você deseja participar?</option>
+                        <option value="esportes">Esportes</option>
+                        <option value="atividades">Atividades</option>
+                        <option value="ambos">Ambos</option>
+                    </select>
+
+                    <select name="horario" class="form-field form-horario">
+                        <option value="" disabled selected>Horário</option>
+                        <option value="manha">Manhã</option>
+                        <option value="tarde">Tarde</option>
+                        <option value="noite">Noite</option>
+                    </select>
+                </div>
+
+                <div class="form-fourth">
+                    <select name="dias_participacao" class="form-field form-dias">
+                        <option value="" disabled selected>Quais dias você deseja participar?</option>
+                        <option value="segunda">Segunda-feira</option>
+                        <option value="terca">Terça-feira</option>
+                        <option value="quarta">Quarta-feira</option>
+                        <option value="quinta">Quinta-feira</option>
+                        <option value="sexta">Sexta-feira</option>
+                        <option value="sabado">Sábado</option>
+                        <option value="domingo">Domingo</option>
+                    </select>
+
+                    <select name="como_soube_ong" class="form-field form-soube">
+                        <option value="" disabled selected>Como você ficou sabendo da nossa ONG?</option>
+                        <option value="redes_sociais">Redes Sociais</option>
+                        <option value="indicacao">Indicação</option>
+                        <option value="eventos">Eventos</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <textarea name="restricoes"
+                        placeholder="Tem alguma restrição ou necessidade especial que devemos saber?"
+                        class="form-field form-restricoes"></textarea>
+                </div>
+
+                <hr>
+
+                <div class="form-buttons">
+                    <button type="reset" class="btn btn-cancel"><a href="../home/home.html">Cancelar</a></button>
+                    <button type="submit" id="botaoConcluir" class="btn btn-submit">Concluir</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script>
+        document.getElementById("form1").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const campos = [
+        { campo: document.querySelector('.form-nome'), erro: 'Nome é obrigatório' },
+        { campo: document.querySelector('.form-email'), erro: 'E-mail inválido', regex: /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/ },
+        { campo: document.querySelector('.form-celular'), erro: 'Celular é obrigatório' },
+        { campo: document.querySelector('.form-endereco'), erro: 'Endereço é obrigatório' },
+        { campo: document.querySelector('.form-data-nascimento'), erro: 'Data de nascimento é obrigatória' },
+        { campo: document.querySelector('.form-genero'), erro: 'Gênero é obrigatório' },
+        { campo: document.querySelector('.form-participacao'), erro: 'Participação é obrigatória' },
+        { campo: document.querySelector('.form-horario'), erro: 'Horário é obrigatório' },
+        { campo: document.querySelector('.form-dias'), erro: 'Dia de participação é obrigatório' },
+        { campo: document.querySelector('.form-soube'), erro: 'Campo obrigatório' }
+    ];
+
+    let isValid = true;
+
+    campos.forEach(({ campo, erro, regex }) => {
+        campo.style.border = '';
+
+        if (!campo.value.trim() || (regex && !regex.test(campo.value))) {
+            campo.style.border = '2px solid red';
+            isValid = false;
+        }
+    });
+
+    if (!isValid) {
+        document.getElementById('overlayErro').style.display = 'flex';
+    } else {
+        this.submit();
+    }
+});
+
+document.getElementById('overlayErro').addEventListener('click', function (e) {
+    if (e.target === this) {
+        this.style.display = 'none';
+    }
+});
+
+    </script>
+
+</html>
